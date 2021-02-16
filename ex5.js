@@ -4,4 +4,27 @@
  * o aparecimento de cada letra.
  */
 
-let frase = "Ei você aí, me dá um dinheiro ai";
+//let frase = "Ei você aí, me dá um dinheiro ai"
+
+//const frase = "Ei você aí, me dá um dinheiro ai"
+
+//const vetorFrase = frase.split("")
+
+//leitura simples sem função
+//for (let i = 0; i < vetorFrase.length; i++) {
+
+//    console.log(vetorFrase[i])
+
+const frase = "Ei você aí, me dá um dinheiro ai"
+let text = ""
+const vetorFrase = frase.split("")
+
+const imprimirCadaSegundo = (s) => {
+    for (let i = 0; i < s.length; i++) {
+        setTimeout(() => {
+            console.log(s[i])
+        }, 1000 * i);
+    }
+}
+
+imprimirCadaSegundo(vetorFrase);
